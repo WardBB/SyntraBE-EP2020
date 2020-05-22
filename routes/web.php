@@ -26,3 +26,8 @@ Route::get('/template', function () {
     return view('template');
 });
 
+Route::get('/home', function () {
+    return view('home');
+});
+
+

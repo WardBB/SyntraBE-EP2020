@@ -1,4 +1,7 @@
-@extends('style')
-@section('template')
+@extends('template.index')
+
+@section('content')
+<div class="home">
 <H1> hello world <h1>
-    @endsection
+</div>
+@endsection

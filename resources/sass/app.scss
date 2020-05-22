@@ -1,4 +1,126 @@
 //
-.hello{
-    color: green($color: #165741);
+.header, .footer {
+    div {
+        font-family: 'Quicksand';
+    }
+    
+    .copyright {
+        color:#5E6572;
+    }
+    
+    img {
+        align-items: center;
+    }
+    
+    .img1 {
+        max-height: 150px;
+    }
+    
+    #copyright {
+        color: #5E6572;
+        text-align: center;
+    }
+    
+    #logo {
+        display:flex;    
+        align-items:center;
+    }
+    
+    .nav-item {
+        padding: 10px;
+        margin-left: 60px;
+        font-size: 18px;
+        font-family: "Quicksand";
+    }
+    
+    .navbar {
+        border-radius:3px;
+        background-color: #5E6572;
+    }
+    
+    .navbar-center{
+        /* position: absolute; */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    hr {
+        color:#211A1D;
+    }
+}
+
+.home{
+    #hpbtn {
+        border-radius: 5px;
+        background-color: #FFA69E;
+        color: white;
+        border-color: white;
+        margin: 4px;
+        padding: 12px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        }
+        
+        #hpbtn:hover {
+        background-color: #f04149;
+        color: white;
+        }
+        
+        #hp2 {
+            background-color: lightgray;
+        }
+        
+        h1 {
+        padding: 8px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        }
+        
+        h2 {
+        margin-top: 40px;
+        margin-bottom: 30px;
+        }
+        
+        h3 {
+            padding: 15px;
+            font-family: "quicksand";
+            margin-top: 40px;
+            margin-bottom: 40px;
+        
+        }
+        
+        p {
+        font-size: 19px; 
+        }
+        
+        #carouselExampleCaptions {
+            margin-top: 45px;
+        }
+        
+        .block {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .circle {
+            background: #FFA69E;
+            border-radius: 200px;
+            color: white;
+            height: 100px;
+            font-weight: bold;
+            width: 100px;
+            display: table;
+            margin:40px auto;
+        }
+        .circle p {
+            vertical-align: middle;
+            display: table-cell;
+        }
+        
+        .circle:hover {
+            background-color: #f04149
+        }
+        
+        #steps {
+            font-size:40px;
+        }
 }
