@@ -1,7 +1,7 @@
 @extends('template.index')
 
 @section('home')
-<div class="home">
+<div class="container home">
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>

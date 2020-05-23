@@ -20,6 +20,8 @@
     @include('template.header')
     @yield('content')
     @yield('home')
+    @yield('about')
+    @yield('contact')
     @include('template.footer')
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

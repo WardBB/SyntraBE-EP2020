@@ -8,11 +8,11 @@
           </button>
           <div class="collapse navbar-dark bg-dark navbar-collapse justify-content-center text-center" id="navbarNavAltMarkup">
             <div class="navbar-nav navbar-dark bg-dark">
-              <a routerLink="home" class="nav-item nav-link">Home</a>
+              <a href="{{route('home')}}" class="nav-item nav-link">Home</a>
               <a routerLink="festivals" class="nav-item nav-link">Festivals</a>
               <a routerLink="favorites" class="nav-item nav-link">Favorites</a>
-              <a routerLink="about" class="nav-item nav-link">About</a>
-              <a routerLink="contact" class="nav-item nav-link">Contact</a>
+              <a href="{{route('about')}}" class="nav-item nav-link">About</a>
+              <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
              </div>
       
              

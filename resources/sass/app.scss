@@ -124,3 +124,134 @@
             font-size:40px;
         }
 }
+
+.about{
+    h2 {
+        font-size: 25px;
+        color: #5E6572;
+        font-family: 'raleway';
+        padding-top: 20px;
+    }
+    h3 {
+        color: #5E6572;
+        font-family: 'raleway';
+    }
+    div {
+        color:#5E6572;
+        font-family: 'Quicksand', sans-serif;
+        margin-bottom: 10px;
+    }
+    p {
+        color: #5E6572;
+        font-family: 'Quicksand';
+        font-size: 15px;
+    }
+    a {
+        color: #5E6572;
+        font-family: 'Quicksand';
+        margin: 2px;
+    }
+    .left {
+        margin-left: 20%;
+    }
+    .right {
+        margin-right: 20%;
+    }
+      .fa:hover {
+        opacity: 0.7;
+    }
+    .fa-facebook {
+        color: #5E6572;
+        background-color: white;
+    }
+    
+    .fa-instagram {
+        color: #5E6572;
+        background-color: white;
+      }
+    
+      .fa-linkedin {
+        color: #5E6572;
+        background-color: white;
+      }
+    
+      .img-fluid {
+          margin-left: 10px;
+          margin-right: 10px;
+      }
+    
+      .h1-responsive {
+          font-size:30px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+      }
+    
+      hr {
+        color:#211A1D;
+    }
+}
+
+.contact{
+    h2 {
+        font-size: 50px;
+        color: #5E6572;
+        font-family: 'raleway';
+        padding-top: 20px;
+    }
+    
+    div {
+        color:white;
+        font-family: 'Quicksand', sans-serif;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        color: #5E6572;
+        font-family: 'Quicksand';
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+    
+    a {
+        color: #5E6572;
+        font-family: 'Quicksand';
+        font-size: 15px;
+    }
+    
+    .btn {
+    color: white;
+    background-color: #F04149;
+    font-family: 'Quicksand';
+    margin: 10px;
+    }
+    
+    .btn:hover {
+        background-color: #B9314F;
+    }
+    
+    .subject {
+        padding-top: 20px;
+        color: #5E6572;
+    }
+    
+    #pin {
+        color: #5E6572;
+    }
+    
+    #phone {
+        color: #5E6572;
+    }
+    
+    #envelope {
+        color: #5E6572;
+    }
+    
+    .cntct {
+        color: #5E6572;
+    }
+    
+    .fa {
+        color: #5E6572;
+        line-height: 24.5px;
+    }
+}
