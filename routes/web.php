@@ -22,18 +22,16 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
-
 //static pages
 Route::view('/home', 'home')->name('home');
 Route::view('/about', 'about')->name('about');
 
 //contact page
 Route::view('/contact', 'contact.create')->name('contact');
-// Route::get('contact','ContactController@create');
 Route::post('/contact/send','ContactController@send')->name('sendContact');
-// // Update - eerst form inladen en data ophalen
-// Route::get('contact/{contact}','ContactController@edit');
-// // een update uitvoeren
-// Route::put('contact/{contact}','ContactController@update');
+
+//festival page
+Route::get('/festivals','FestivalController@show')->name('festivals');
+
 
 

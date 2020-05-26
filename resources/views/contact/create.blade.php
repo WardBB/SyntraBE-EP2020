@@ -74,11 +74,6 @@
                 <button type="submit" class="btn btn-primary">Send</button>
             </form>
 
-            {{-- <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
-            <div class="status"></div>
-        </div> --}}
 
         <div class="col-md-3 text-center">
             <ul class="list-unstyled mb-0">

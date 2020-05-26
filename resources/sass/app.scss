@@ -255,3 +255,35 @@
         line-height: 24.5px;
     }
 }
+
+.festival-list{
+    .btn {
+        color: white;
+        background-color: #f04149;
+        font-family: 'Quicksand';
+        margin: 10px;
+        }
+        
+        .btn:hover {
+            background-color: #B9314F;
+        }
+    
+        #search {
+            padding: 8px;
+            margin: 8px;
+        }
+    
+        .favorites {
+            text-align: center;
+            border: 3px solid green;
+        }
+    
+        #btn2 {
+            background-color: #B9314F;
+            color:white;
+        }
+        
+        #btn2:hover {
+            background-color: #f04149;
+        }
+}
