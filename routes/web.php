@@ -17,21 +17,26 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//voyager routes
+// Voyager routes
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
-//static pages
+// Static pages
 Route::view('/home', 'home')->name('home');
 Route::view('/about', 'about')->name('about');
 
-//contact page
+// Contact page
 Route::view('/contact', 'contact.create')->name('contact');
 Route::post('/contact/send','ContactController@send')->name('sendContact');
 
-//festival page
+// Festival page
 Route::get('/festivals','FestivalController@show')->name('festivals');
 
+// Login page
+Route::view('/login', 'authentication.login')->name('login');
 
 
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

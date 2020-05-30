@@ -9,7 +9,7 @@
           <div class="collapse navbar-dark bg-dark navbar-collapse justify-content-center text-center" id="navbarNavAltMarkup">
             <div class="navbar-nav navbar-dark bg-dark">
               <a href="{{route('home')}}" class="nav-item nav-link">Home</a>
-              <a href="{{route('festivals')}} class="nav-item nav-link">Festivals</a>
+              <a href="{{route('festivals')}}" class="nav-item nav-link">Festivals</a>
               <a routerLink="favorites" class="nav-item nav-link">Favorites</a>
               <a href="{{route('about')}}" class="nav-item nav-link">About</a>
               <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
