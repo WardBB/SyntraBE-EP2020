@@ -287,3 +287,24 @@
             background-color: #f04149;
         }
 }
+
+.festival{
+    .btn {
+        background-color: #B9314F;
+        color:white;
+    }
+    
+    .btn:hover {
+        background-color: #f04149;
+    }
+    
+    .row {
+    padding-top:30px;
+    padding-bottom:30px;
+    }
+    
+    #logout {
+        margin-top: 20px;
+        padding: 13px;
+    }
+}

@@ -13,9 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 // Voyager routes
 Route::group(['prefix' => 'admin'], function () {
@@ -23,7 +20,7 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 // Static pages
-Route::view('/home', 'home')->name('home');
+Route::view('/', 'home')->name('home');
 Route::view('/about', 'about')->name('about');
 
 // Contact page
@@ -36,7 +33,10 @@ Route::get('/festivals','FestivalController@show')->name('festivals');
 // Login page
 Route::view('/login', 'authentication.login')->name('login');
 
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+//favorites page
+Route::get('/favorites', 'FavoriteController@index')->name('favorites');
+
+// Route::get('/home', 'HomeController@index')->name('home');
