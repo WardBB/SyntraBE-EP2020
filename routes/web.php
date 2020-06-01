@@ -38,5 +38,3 @@ Auth::routes();
 
 //favorites page
 Route::get('/favorites', 'FavoriteController@index')->name('favorites');
-
-// Route::get('/home', 'HomeController@index')->name('home');

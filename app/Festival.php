@@ -3,13 +3,14 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use DB;
 
 
 class Festival extends Model
 {
-    public function getNameAttribute($value)
+
+    public function users()
     {
-        return ucfirst($value);
+        return $this->belongsToMany(User::class);
     }
+
 }
