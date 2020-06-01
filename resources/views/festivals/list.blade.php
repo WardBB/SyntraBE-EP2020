@@ -13,7 +13,7 @@
             <div class="row row-cols-1 row-cols-md-4">
                 @foreach($festivals as $festival)
                     <div class="card">
-                        <img src="/{{$festival->img}}" class="card-img-top" alt="{{$festival->name}}">
+                        <img src="{{$festival->img}}" class="card-img-top" alt="{{$festival->name}}">
                         <div class="card-body">
                             <h5 class="card-title">{{$festival->name}}</h5>
                             <p class="card-text">{{$festival->country}}</p>
