@@ -30,6 +30,9 @@ Route::post('/contact/send','ContactController@send')->name('sendContact');
 // Festival page
 Route::get('/festivals','FestivalController@show')->name('festivals');
 
+// Dit is aangesproken via javascript
+Route::get('/festivals/{id}', 'FestivalController@item')->name('festivalItem');
+
 // Login page
 Route::view('/login', 'authentication.login')->name('login');
 
@@ -38,3 +41,4 @@ Auth::routes();
 
 //favorites page
 Route::get('/favorites', 'FavoriteController@index')->name('favorites');
+

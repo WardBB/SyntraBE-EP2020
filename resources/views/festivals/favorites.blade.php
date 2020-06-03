@@ -2,10 +2,16 @@
 
 @section('content')
     
-<div class="container favorites">
+<div class="container">
 
-    <p> HELLO</p>
-    {{$username}}
+    <div class="home">
+        <div class="row justify-content-center">
+            <div class="col-md-4 text-center">
+                <h5>Hi there, {{$username}}! Here you can see your favorite festivals!</h5>
+            </div>
+        </div>
+    </div>
+    
 
         <div class="favorites"></div>
         <div class="row row-cols-1 row-cols-md-5">
@@ -19,8 +25,9 @@
                         <p class="card-text"><small class="text-muted">{{$festival->city}}</small></p>
                         <p>Date: from {{$festival->from}} to {{$festival->til}}</p>
                         <p>Festival homepage: <a href="{{$festival->URL}}"> {{$festival->name}}</a></p>
-        
-                        <a class="btn btn-info" (click)="deleteFav(festival.id)">Remove</a>
+                        <form method="post" action="/favorite/deleteFav({{$festival->id}})">
+                        <a class="btn btn-info" type="submit">Remove</a>
+                        </form>
                     </div>
                 </div>
             </div>
