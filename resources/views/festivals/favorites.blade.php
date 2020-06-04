@@ -25,9 +25,20 @@
                         <p class="card-text"><small class="text-muted">{{$festival->city}}</small></p>
                         <p>Date: from {{$festival->from}} to {{$festival->til}}</p>
                         <p>Festival homepage: <a href="{{$festival->URL}}"> {{$festival->name}}</a></p>
-                        <form method="post" action="/favorite/deleteFav({{$festival->id}})">
-                        <a class="btn btn-info" type="submit">Remove</a>
-                        </form>
+                        
+                    {{-- <a class="btn btn-info" href="{{route('favRemove', ['id'=> $festival])}}">Remove</a> --}}
+
+                    {{-- {!!Form::open(['action' => ['FavoriteController@remove', $festival], 'method' => 'POST'])!!}
+                    {!! Form::hidden('_method', 'DELETE') !!}
+                    {!! Form::submit('Delete', ['class' => 'btn btn-info']) !!}
+                    {!! Form::close() !!} --}}
+
+                    <form action="{{route('favRemove', ['id'=> $festival])}}" method="POST">
+                        @method('DELETE')
+                        @csrf 
+                        <button class="btn btn-info" type="submit">Remove</button>
+                    </form>
+                        
                     </div>
                 </div>
             </div>

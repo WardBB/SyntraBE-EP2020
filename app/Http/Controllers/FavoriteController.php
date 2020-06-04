@@ -34,4 +34,11 @@ class FavoriteController extends Controller
             ]);
     }
 
+    public function remove($id){
+        $user = \Auth::user();
+        $user->festivals()->detach($id);
+
+        return redirect('/favorites');
+    }
+
 }

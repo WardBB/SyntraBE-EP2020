@@ -41,4 +41,5 @@ Auth::routes();
 
 //favorites page
 Route::get('/favorites', 'FavoriteController@index')->name('favorites');
+Route::delete('/favorites/{id}', 'FavoriteController@remove')->name('favRemove');
 
