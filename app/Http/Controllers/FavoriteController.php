@@ -41,4 +41,10 @@ class FavoriteController extends Controller
         return redirect('/favorites');
     }
 
+    public function add($id){
+        $user = \Auth::user();
+        $user->festivals()->attach($id);
+
+        return redirect('/favorites');
+    }
 }

@@ -18,17 +18,10 @@ class FestivalController extends Controller
         return view('festivals.list', ['festivals' => $festivals]);
     }
 
-    public function getFestivalDetail($id) {
-        $detailFestival = Festival::find($id);
-
-        return view('festivals.list', ['detailFestival' => $detailFestival]);
-    }
-
-
-    public function item($id) {
+     public function item($id) {
         $festival = Festival::find($id);
-        // return response()->json($festival);
         return view('festivals.detail', ['festival' => $festival]);
     }
+
 
 }

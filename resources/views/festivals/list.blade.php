@@ -19,6 +19,7 @@
                             <p class="card-text">{{$festival->country}}</p>
                             <p class="card-text"><small class="text-muted">{{$festival->city}}</small></p>
 
+                            
                             <div class="festival-detail" style="display: none;">
                                 @include('festivals.detail', $festival)
                             </div>
@@ -27,12 +28,13 @@
                             <button class="btn btn-info festival-detail" data-toggle="modal" data-target="#staticBackdrop">
                                 Details
                             </button>
-                            <button class="btn btn-info nav-item nav-link" *ngIf="!showAddFavorite" routerLink="/login">
+                            {{-- <button class="btn btn-info nav-item nav-link" *ngIf="!showAddFavorite" routerLink="/login">
                                 Favorite
-                            </button>
-                            <button class="btn btn-info" (click)="addFav(festival.id)" *ngIf="showAddFavorite">
-                                Favorite
-                            </button>
+                            </button> --}}
+                            <form action="{{route('favAdd', ['id'=> $festival])}}" method="POST">
+                                @csrf 
+                                <button class="btn btn-info" type="submit">Favorite</button>
+                            </form>
                         </div>
                     </div>
                 @endforeach

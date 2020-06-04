@@ -38,7 +38,7 @@
         <div class="row">
             <div class="justify-content-right">
                 <h2>BRITT</h2>
-                (21) is from Bakel, which is close to Eindhoven in the Netherlands. She has a degree in interior design
+                (22) is from Bakel, which is close to Eindhoven in the Netherlands. She has a degree in interior design
                 and is currently working in a furniture store. After going on a trip abroad for five months, she decided
                 to choose a different direction. Last year she got a degree as a graphic designer at Syntra. She then
                 decided to start studying full stack development. That way she can combine the two, so she will stand
@@ -47,7 +47,7 @@
             <hr>
             <div class="justify-content-right text-right">
                 <h2>MARJOLIJN</h2>
-                (29) grew up in Heusden-Zolder and has been living in Hamont for the past two years. She has been
+                (30) grew up in Heusden-Zolder and has been living in Hamont for the past two years. She has been
                 working as a sorter at Mireille in Heusden. After a big surgery at the beginning of 2018, she stopped
                 working and refound her passion for game design. She got her degree when she finished a study for game
                 app design. She now wishes to learn more about software and webdevelopment. That way she wants to build
@@ -56,7 +56,7 @@
             <hr>
             <div class="justify-content-left">
                 <h2>WARD</h2>
-                (39) is from Dilsen-Stokkem, Belgium and has a bachelor degree in communication management. As a website
+                (40) is from Dilsen-Stokkem, Belgium and has a bachelor degree in communication management. As a website
                 manager/operator and being a news editor at Golazo Media in Beringen, he has been working with a few
                 different content management systems, like Wordpress, for over 15 years now. His interests in IT started
                 to grow and last year he received his certificate because he successfully finished network management.

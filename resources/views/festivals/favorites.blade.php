@@ -25,7 +25,11 @@
                         <p class="card-text"><small class="text-muted">{{$festival->city}}</small></p>
                         <p>Date: from {{$festival->from}} to {{$festival->til}}</p>
                         <p>Festival homepage: <a href="{{$festival->URL}}"> {{$festival->name}}</a></p>
-                        
+
+
+                    {{-- This is the old way of making a form (seen on a tutorial on youtube), i'll leave this here as an example   --}}
+
+
                     {{-- <a class="btn btn-info" href="{{route('favRemove', ['id'=> $festival])}}">Remove</a> --}}
 
                     {{-- {!!Form::open(['action' => ['FavoriteController@remove', $festival], 'method' => 'POST'])!!}
@@ -33,6 +37,8 @@
                     {!! Form::submit('Delete', ['class' => 'btn btn-info']) !!}
                     {!! Form::close() !!} --}}
 
+                    
+                    {{-- This is the "NEW" way of making a form! --}}
                     <form action="{{route('favRemove', ['id'=> $festival])}}" method="POST">
                         @method('DELETE')
                         @csrf 

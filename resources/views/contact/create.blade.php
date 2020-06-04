@@ -22,7 +22,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
                             </div>
                             <input type="text" formControlName="firstName" id="name" name="name" class="form-control"
-                                required placeholder="Jennifer Brown">
+                                required placeholder="name">
                         </div>
                     </div>
 
@@ -33,7 +33,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="fa fa-phone" aria-hidden="true"></i></span>
                             </div>
                             <input type="text" id="phone" name="phone" class="form-control" required
-                                placeholder="+31 6 12 34 56 78">
+                                placeholder="phonenumber">
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
                             </div>
                             <input type="text" id="email" name="email" class="form-control" required
-                                placeholder="info@festifavs.com">
+                                placeholder="your-email@mail.com">
                         </div>
                         <div class="md-form mb-0">
                             <label for="subject" class="subject">Subject:*</label>
