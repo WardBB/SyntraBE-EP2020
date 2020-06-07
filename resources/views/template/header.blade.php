@@ -19,13 +19,9 @@
                 </a>
 
                 <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item">
-                  {{-- onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
-                   {{ __('Logout') }} --}}
+                  {{-- <a class="dropdown-item">
                    Edit account details
-
-                  </a>
+                  </a> --}}
                     <a class="dropdown-item" href="{{ route('logout') }}"
                        onclick="event.preventDefault();
                                      document.getElementById('logout-form').submit();">
@@ -60,7 +56,6 @@
               <a href="{{route('favorites')}}"class="nav-item nav-link">Favorites</a>
               <a href="{{route('about')}}" class="nav-item nav-link">About</a>
               <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
-              {{-- <a href="{{ route('login') }}" class="nav-item nav-link">{{ __('Login') }}</a> --}}
              </div>
       
              

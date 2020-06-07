@@ -3,11 +3,12 @@
 @section('festivals')
     <div class="container festival-list">
         <div class="justify-content-right text-right">
-            <i class="fas fa-search"></i><input type="text" class="justify-content-left" id="search" name="search" placeholder="Search for festivals..." [formControl]="search"
-                autofocus />
-        </div>
-        <div class="justify-content-right text-right">
-        {{-- <button id="btn2" class="btn btn-primary" *ngIf="authService.isLoggedIn" (click)="authService.logout()">Logout</button> --}}
+            {{-- <i class="fas fa-search"></i><input type="text" class="justify-content-left" id="search" name="search" placeholder="Search for festivals..." autofocus /> --}}
+            <form action="" method="GET">
+                @csrf 
+                <i class="fas fa-search"></i><input type="text" class="justify-content-left" id="search" name="search" placeholder="Search for festivals..." autofocus />
+                <button class="btn btn-info" type="submit">Search</button>
+            </form>
         </div>
         <div class="container" style="margin-top: 15px;">
             <div class="row row-cols-1 row-cols-md-4">
@@ -28,9 +29,7 @@
                             <button class="btn btn-info festival-detail" data-toggle="modal" data-target="#staticBackdrop">
                                 Details
                             </button>
-                            {{-- <button class="btn btn-info nav-item nav-link" *ngIf="!showAddFavorite" routerLink="/login">
-                                Favorite
-                            </button> --}}
+
                             <form action="{{route('favAdd', ['id'=> $festival])}}" method="POST">
                                 @csrf 
                                 <button class="btn btn-info" type="submit">Favorite</button>
