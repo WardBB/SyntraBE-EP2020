@@ -16,7 +16,13 @@ class FestivalController extends Controller
         $search = $request->get('search');
 
         if ($search) {
-            $festivals = Festival::where('name', 'like', '%'. $search .'%')->get();
+            $festivals = Festival::query()
+                ->where('name', 'LIKE', "%{$search}%")
+                ->orWhere('country', 'LIKE', "%{$search}%")
+                ->orWhere('city', 'LIKE', "%{$search}%")
+                ->orWhere('music', 'LIKE', "%{$search}%")
+                ->orderBy('name', 'asc')
+                ->get();
         } else {
             $festivals = Festival::all(); 
         }
