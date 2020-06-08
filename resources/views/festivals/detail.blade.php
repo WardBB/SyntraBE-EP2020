@@ -9,8 +9,8 @@
     <h3>{{$festival->country}}</h3>
     <h4>{{$festival->city}}</h4>
     <p>Festival homepage: <a href="{{$festival->url}}" target="_blank"> {{$festival->name}}</a></p>
-    <p>Date: from {{$festival->starts_at ? $festival->starts_at->toFormattedDateString() : "unknown"}} -
-        {{$festival->ends_at ? $festival->ends_at->toFormattedDateString() : "unknown"}}</p>
+    <p>Date: from <b>{{$festival->starts_at ? $festival->starts_at->toFormattedDateString() : "unknown"}}</b>  till 
+        <b>{{$festival->ends_at ? $festival->ends_at->toFormattedDateString() : "unknown"}}</b></p>
 
     <p> Genre: {{$festival->music}} </p>
     <p><i class="fas fa-calendar-day"></i> Dayticket: &euro; {{$festival->dayticket}}</p>

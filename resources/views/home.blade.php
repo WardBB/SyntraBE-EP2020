@@ -41,7 +41,7 @@
                 list. Wanna know more about the people behind this page? Make sure to click on the button below to get to know us.</p>
             <p>Not sure how our page works? Scroll down and check the "How it works."</p>
             <div class="justify-content-center text-center">
-                <button type="button" id="hpbtn">Get to know us!</button>
+                <a href="{{route('about')}}" class="btn btn-outline-danger">Get to know us!</a>
             <hr>
             <h3>“Here's to the nights that turned into mornings, and the friends that turned into family."</h3>
             <hr>

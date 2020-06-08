@@ -8,7 +8,10 @@ To install locally:
 
 - Clone project
 - Run `composer install`
-- Configure `.env` file with DB details/info
+- Run `cp .env.example .env`
+- Change the DB_ info in `.env`
+- Change MAIL_ info in `.env`
+- Run `php artisan key:generate`
 - Run `php artisan migrate`
 - Run `php artisan db:seed --class=FestivalsData`
 

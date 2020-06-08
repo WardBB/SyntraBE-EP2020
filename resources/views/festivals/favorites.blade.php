@@ -23,7 +23,16 @@
                         <h5 class="card-title">{{$festival->name}}</h5>
                         <p class="card-text">{{$festival->country}}</p>
                         <p class="card-text"><small class="text-muted">{{$festival->city}}</small></p>
-                        <p>Date: from {{$festival->from}} to {{$festival->til}}</p>
+                        <p>Date: 
+                            <br>
+                            from 
+                            <br>
+                            <b>{{$festival->starts_at ? $festival->starts_at->toFormattedDateString() : "unknown"}}</b>
+                            <br>
+                             till 
+                             <br>
+                             <b>{{$festival->ends_at ? $festival->ends_at->toFormattedDateString() : "unknown"}}</b>
+                        </p>
                         <p>Festival homepage: <a href="{{$festival->URL}}"> {{$festival->name}}</a></p>
 
 
