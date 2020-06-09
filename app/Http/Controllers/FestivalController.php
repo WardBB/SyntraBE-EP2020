@@ -36,5 +36,4 @@ class FestivalController extends Controller
         return view('festivals.detail', ['festival' => $festival]);
     }
 
-
 }
