@@ -1,14 +1,17 @@
 @extends('template.index')
 
-@section('contact')
-<section id="content" class="content">
-    <div class="container contact">
-        <div class="row">
-                <h2>Thank you!</h2>
-                <div class="recap">We have received your request...</div>
+@section('content')
 
-              
+    <div class="container contact">
+        <div class="row text-center justify-content-center">
+                <div class="col-12">
+                    <h2>Thank you!</h2>
+                </div>
+                <br>
+                <div class="col-12">
+                    <p>We have received your request...<p>
+                </div>   
         </div>
     </div>
-</section>
+
 @endsection

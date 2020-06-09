@@ -41,7 +41,7 @@
      
       <div class="row justify-content-center text-center">
         <div class="col-md">
-          <img src="assets/img/festifavs_logo.png" width="300px">
+          <img src="../assets/img/festifavs_logo.png" width="300px">
         </div>
       </div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-center">
