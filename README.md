@@ -34,6 +34,6 @@ To create a NEW admin user:
 
 You will be prompted for the users name and password.
 
-check out voyagers documentation! 
+check out voyager's documentation! 
 https://voyager-docs.devdojo.com/getting-started/what-is-voyager
 

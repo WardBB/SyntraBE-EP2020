@@ -31,6 +31,9 @@ class FestivalController extends Controller
 
     }
 
+    /**
+     * 
+     */
      public function item($id) {
         $festival = Festival::find($id);
         return view('festivals.detail', ['festival' => $festival]);
