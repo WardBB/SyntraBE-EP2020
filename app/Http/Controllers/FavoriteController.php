@@ -43,7 +43,7 @@ class FavoriteController extends Controller
 
     public function add($id){
         $user = \Auth::user();
-        $user->festivals()->attach($id);
+        $user->festivals()->syncWithoutDetaching($id);
 
         return redirect('/favorites');
     }
