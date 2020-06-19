@@ -22,7 +22,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
                             </div>
                             <input type="text" formControlName="firstName" id="name" name="name" class="form-control"
-                                required placeholder="name">
+                                required placeholder="Your full name">
                         </div>
                     </div>
 
@@ -33,7 +33,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="fa fa-phone" aria-hidden="true"></i></span>
                             </div>
                             <input type="text" id="phone" name="phone" class="form-control" required
-                                placeholder="phonenumber">
+                                placeholder="Phone number">
                         </div>
                     </div>
                 </div>

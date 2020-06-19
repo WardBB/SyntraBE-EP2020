@@ -2,12 +2,12 @@
 
 @section('content')
     
-<div class="container">
+<div class="container favorites">
 
     <div class="home">
         <div class="row justify-content-center">
             <div class="col-md-4 text-center">
-                <h5>Hi there, {{$username}}! Here you can see your favorite festivals!</h5>
+                <h5>Hi there, {{$username}}! Here you can find all of your favorite festivals!</h5>
             </div>
         </div>
     </div>

@@ -39,7 +39,7 @@
             <h1>Welcome!</h1>
             <p>Hi and welcome to FestiFavs. Here's where you can find all of your favorite festivals and add them to your
                 list. Wanna know more about the people behind this page? Make sure to click on the button below to get to know us.</p>
-            <p>Not sure how our page works? Scroll down and check the "How it works."</p>
+            <p>Not sure how our page works? Scroll down and check the "How it works" part.</p>
             <div class="justify-content-center text-center">
                 <a href="{{route('about')}}" class="btn btn-outline-danger">Get to know us!</a>
             <hr>
@@ -70,7 +70,7 @@
     
     <div class="container">
         <div class="row">
-            <div class="col-md-4 block">
+        <div class="col-md-4 block">
                 <div>
                     <p>Check out all of the festivals that will take place in 2020. You can find all of the details when clicking on the Detail button.
                         Here you can find dates, prices and even genres that will be played at the festival!</p>
