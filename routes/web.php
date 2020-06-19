@@ -40,6 +40,9 @@ Route::view('/login', 'authentication.login')->name('login');
 
 Auth::routes();
 
+// User Dashboard
+Route::view('/edit_user', 'auth.edit')->name('editUser');
+
 
 //favorites page
 Route::get('/favorites', 'FavoriteController@index')->name('favorites');

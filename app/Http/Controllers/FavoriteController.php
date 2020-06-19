@@ -26,14 +26,30 @@ class FavoriteController extends Controller
     {
         $user = \Auth::user();
         $festivals = $user->festivals;
-        // dd($festivals);
 
         return view('festivals.favorites', [
             'username' => $user->name, 
             'festivals' => $festivals
-            ]);
+        ]);
     }
 
+    /**
+     * Attaches user(id) and festival(id) in pivot table
+     * 
+     * @return \Illuminate\Routing\Redirector|\Illuminate\Http\RedirectResponse
+     */
+    public function add($id){
+        $user = \Auth::user();
+        $user->festivals()->syncWithoutDetaching($id);
+
+        return redirect('/favorites');
+    }
+
+    /**
+     * Detaches user(id) and festival(id) in pivot table
+     * 
+     * @return \Illuminate\Routing\Redirector|\Illuminate\Http\RedirectResponse
+     */
     public function remove($id){
         $user = \Auth::user();
         $user->festivals()->detach($id);
@@ -41,10 +57,4 @@ class FavoriteController extends Controller
         return redirect('/favorites');
     }
 
-    public function add($id){
-        $user = \Auth::user();
-        $user->festivals()->attach($id);
-
-        return redirect('/favorites');
-    }
 }
